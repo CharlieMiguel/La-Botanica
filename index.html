@@ -1,0 +1,485 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>La Botanica</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+<link rel="icon" type="image" href="img/logo.png">
+ 
+</head>
+<body>
+    <div class="t1">
+        <h1>La Botanica</h1>
+    </div>
+    <div class="carousel-container">
+        <!-- Botón para retroceder -->
+        <button class="btn btn-prev">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                <path d="M15.41 16.59L10.83 12l4.58-4.59L14 6l-6 6 6 6 1.41-1.41z"/>
+            </svg>
+        </button>
+        
+        <!-- Contenedor del carrusel -->
+        <div class="carousel" id="carousel">
+            <!-- CARTAS DUPLICADAS AL INICIO (para efecto infinito) -->
+            <!-- Carta 24 (duplicada al inicio) -->
+            <div class="card">
+                <div class="card-front">
+                    <img src="img/rosa.png" alt="Rosas" class="card-img">
+                </div>
+                <div class="card-back">
+                    <h3 class="card-title">Rosas</h3>
+                    <div class="card-description">
+                        <p>Una de las flores más reconocidas y apreciadas en todo el mundo. Las rosas tienen una forma elegante, múltiples pétalos y un aroma dulce y característico. </p>
+                        <p>Existen en una gran variedad de colores: rojas (amor), blancas (pureza), amarillas (amistad), rosadas (gratitud), entre otras. Se usan en jardinería, perfumes, cosméticos y arreglos florales.</p>
+                    </div>
+                </div>
+                <button class="details-btn">Detalles</button>
+            </div>
+            <!-- Carta 25 (duplicada al inicio) -->
+            <div class="card">
+                <div class="card-front">
+                    <img src="img/girasol.png" alt="Girasol" class="card-img">
+                </div>
+                <div class="card-back">
+                    <h3 class="card-title">Girasoles</h3>
+                    <div class="card-description">
+                        <p>Esta flor, cuyo nombre proviene de su tendencia a girar hacia el sol (heliotropismo), es grande, de pétalos amarillos brillantes y centro oscuro.</p>
+                        <p> Representa la felicidad, la energía y la vitalidad. Es símbolo de adoración y longevidad. También se cultiva por sus semillas comestibles y su aceite.</p>
+                    </div>
+                </div>
+                <button class="details-btn">Detalles</button>
+            </div>
+            
+            <!-- CARTAS ORIGINALES (1-25) -->
+            <!-- Carta 1 -->
+            <div class="card">
+                <div class="card-front">
+                    <img src="img/tulipan.png" alt="Tuipanes" class="card-img">
+                </div>
+                <div class="card-back">
+                    <h3 class="card-title">Tulipanes</h3>
+                    <div class="card-description">
+                        <p>De forma simple pero elegante, los tulipanes son flores bulbosas de primavera. Suaves y simétricos, vienen en colores como rojo, blanco, púrpura, naranja y amarillo.</p>
+                        <p>Son símbolo de amor perfecto y elegancia. Países como los Países Bajos los cultivan en enormes campos y los exportan a todo el mundo.</p>
+                    </div>
+                </div>
+                <button class="details-btn">Detalles</button>
+            </div>
+            <!-- Carta 2 -->
+            <div class="card">
+                <div class="card-front">
+                    <img src="img/lirio.png" alt="Lirio" class="card-img">
+                </div>
+                <div class="card-back">
+                    <h3 class="card-title">Lirios</h3>
+                    <div class="card-description">
+                        <p>Comúnmente blancos, rosados o anaranjados. En muchas culturas representan pureza, fertilidad y renovación espiritual.</p>
+                        <p> Muy utilizados en bodas y funerales. Muy llamativo, con pétalos en forma de trompeta. Existen muchas variedades: asiáticos, orientales, trompeta, entre otros.</p>
+                    </div>
+                </div>
+                <button class="details-btn">Detalles</button>
+            </div>
+            <!-- Carta 3 -->
+            <div class="card">
+                <div class="card-front">
+                    <img src="img/orquidea.png" alt="Orquidea" class="card-img">
+                </div>
+                <div class="card-back">
+                    <h3 class="card-title">Orquideas</h3>
+                    <div class="card-description">
+                        <p> Existen más de 25,000 especies de orquídeas. Son flores exóticas, de formas y colores muy diversos.</p>
+                        <p>Se asocian con el lujo, la belleza refinada y la sensualidad. Algunas especies son muy raras y difíciles de cultivar, lo que aumenta su valor. Son muy populares como plantas de interior.</p>
+                    </div>
+                </div>
+                <button class="details-btn">Detalles</button>
+            </div>
+            <!-- Carta 4 -->
+            <div class="card">
+                <div class="card-front">
+                    <img src="img/margarita.png" alt="Margarita" class="card-img">
+                </div>
+                <div class="card-back">
+                    <h3 class="card-title">Margaritas</h3>
+                    <div class="card-description">
+                        <p>De pétalos blancos y centro amarillo, aunque también hay variedades de colores. Representa la inocencia, la alegría y la juventud.</p>
+                        <p> Su estructura sencilla la hace símbolo de sinceridad. Muy común en praderas y jardines. Fácil de cuidar y resistente.</p>
+                    </div>
+                </div>
+                <button class="details-btn">Detalles</button>
+            </div>
+            <!-- Carta 5 -->
+            <div class="card">
+                <div class="card-front">
+                    <img src="img/clavel.png" alt="Clavel" class="card-img">
+                </div>
+                <div class="card-back">
+                    <h3 class="card-title">Claveles</h3>
+                    <div class="card-description">
+                        <p> Flor de pétalos rizados y borde dentado. Viene en una gama amplia de colores. Los claveles rojos simbolizan amor, los blancos, buena suerte, y los rosados, gratitud.</p>
+                        <p>Muy usados en festividades religiosas y como flor de corte. Su fragancia es suave y agradable.</p>
+                    </div>
+                </div>
+                <button class="details-btn">Detalles</button>
+            </div>
+            <!-- Carta 6 -->
+            <div class="card">
+                <div class="card-front">
+                    <img src="img/hortensia.png" alt="Hortensia" class="card-img">
+                </div>
+                <div class="card-back">
+                    <h3 class="card-title">Hortensias</h3>
+                    <div class="card-description">
+                        <p>Sus flores se agrupan en grandes ramos esféricos. Los colores varían entre azul, rosa, blanco y púrpura, dependiendo del pH del suelo.</p>
+                        <p> Representan gratitud, abundancia y amor sincero. Son flores ornamentales comunes en jardines y arreglos grandes.</p>
+                    </div>
+                </div>
+                <button class="details-btn">Detalles</button>
+            </div>
+            <!-- Carta 7 -->
+            <div class="card">
+                <div class="card-front">
+                    <img src="img/peonia.png" alt="Peonia" class="card-img">
+                </div>
+                <div class="card-back">
+                    <h3 class="card-title">Peonias</h3>
+                    <div class="card-description">
+                        <p>Flor exuberante, muy frondosa y aromática. Florece en primavera o principios del verano.</p>
+                        <p>Tiene fuertes connotaciones románticas, y es símbolo de riqueza, prosperidad y honor en culturas asiáticas. Se usa mucho en bodas y en decoración de interiores.</p>
+                    </div>
+                </div>
+                <button class="details-btn">Detalles</button>
+            </div>
+            <!-- Carta 8 -->
+            <div class="card">
+                <div class="card-front">
+                    <img src="img/dalia.png" alt="Dalia" class="card-img">
+                </div>
+                <div class="card-back">
+                    <h3 class="card-title">Dalias</h3>
+                    <div class="card-description">
+                        <p> De origen mexicano, la dalia tiene una estructura compleja, casi geométrica, y una gran variedad de colores y
+                            tamaños. Simboliza la fuerza, la creatividad y la elegancia.</p>
+                        <p> Es la flor nacional de México y muy popular en
+                            jardines por su larga floración</p>
+                    </div>
+                </div>
+                <button class="details-btn">Detalles</button>
+            </div>
+            <!-- Carta 9 -->
+            <div class="card">
+                <div class="card-front">
+                    <img src="img/lavanda.png" alt="Lavanda" class="card-img">
+                </div>
+                <div class="card-back">
+                    <h3 class="card-title">Lavandas</h3>
+                    <div class="card-description">
+                        <p> Planta aromática con pequeñas flores moradas dispuestas en espigas. Su fragancia es ampliamente usada en
+                            aceites esenciales, jabones y ambientadores.</p>
+                        <p> Simboliza paz, tranquilidad y limpieza. También tiene propiedades
+                            relajantes y medicinales</p>
+                    </div>
+                </div>
+                <button class="details-btn">Detalles</button>
+            </div>
+            <!-- Carta 10 -->
+            <div class="card">
+                <div class="card-front">
+                    <img src="img/jacinto.png" alt="Jacinto" class="card-img">
+                </div>
+                <div class="card-back">
+                    <h3 class="card-title">Jacintos</h3>
+                    <div class="card-description">
+                        <p> Flor primaveral con un tallo erecto cubierto de pequeñas flores tubulares muy perfumadas. Los hay en colores
+                            azul, blanco, rosa, morado. Asociado con la constancia y la belleza.</p>
+                        <p> Muy usados en jardines aromáticos y en
+                            interiores.</p>
+                    </div>
+                </div>
+                <button class="details-btn">Detalles</button>
+            </div>
+            <!-- Carta 11 -->
+            <div class="card">
+                <div class="card-front">
+                    <img src="img/narciso.png" alt="Narciso" class="card-img">
+                </div>
+                <div class="card-back">
+                    <h3 class="card-title">Narcisos</h3>
+                    <div class="card-description">
+                        <p> Flor con forma de trompeta, suele ser amarilla o blanca. Su nombre proviene de la mitología griega (Narciso, el
+                            joven enamorado de su reflejo).</p>
+                        <p>. Simboliza renovación, nuevos comienzos y autoestima. Muy usada como flor
+                            decorativa de primavera</p> 
+                    </div>
+                </div>
+                <button class="details-btn">Detalles</button>
+            </div>
+            <!-- Carta 12 -->
+            <div class="card">
+                <div class="card-front">
+                    <img src="img/azucena.png" alt="Azucena" class="card-img">
+                </div>
+                <div class="card-back">
+                    <h3 class="card-title">Azucenas</h3>
+                    <div class="card-description">
+                        <p>Muy similar al lirio blanco, esta flor tiene pétalos largos, blancos y aromáticos.</p>
+                        <p> Representa la pureza, la nobleza
+                            y la espiritualidad. Es común en ceremonias religiosas y bodas. También conocida como "lirio de la Madonna".</p>
+                    </div>
+                </div>
+                <button class="details-btn">Detalles</button>
+            </div>
+            <!-- Carta 13 -->
+            <div class="card">
+                <div class="card-front">
+                    <img src="img/amarilis.png" alt="Amarilis" class="card-img">
+                </div>
+                <div class="card-back">
+                    <h3 class="card-title">Amarilis</h3>
+                    <div class="card-description">
+                        <p> De tallo largo y fuerte, tiene grandes flores en forma de trompeta</p>
+                        <p> Florece en invierno, lo que la hace popular en
+                            épocas navideñas. Viene en rojo, blanco, rosa o rayado. Simboliza orgullo, belleza radiante y determinación.</p>
+                    </div>
+                </div>
+                <button class="details-btn">Detalles</button>
+            </div>
+            <!-- Carta 14 -->
+            <div class="card">
+                <div class="card-front">
+                    <img src="img/crisantemo.png" alt=" Crisantemo" class="card-img">
+                </div>
+                <div class="card-back">
+                    <h3 class="card-title"> Crisantemos</h3>
+                    <div class="card-description">
+                        <p>Muy valorado en Asia, especialmente en Japón y China. En Occidente suele asociarse con el luto,</p>
+                        <p>pero en
+                            Oriente representa longevidad, nobleza y felicidad. Tiene una gran variedad de formas y colores. Florece en
+                            otoño.</p>
+                    </div>
+                </div>
+                <button class="details-btn">Detalles</button>
+            </div>
+            <!-- Carta 15 -->
+            <div class="card">
+                <div class="card-front">
+                    <img src="img/anemona.png" alt=" Anémona" class="card-img">
+                </div>
+                <div class="card-back">
+                    <h3 class="card-title"> Anémonas</h3>
+                    <div class="card-description">
+                        <p> Flor delicada con pétalos finos y colores vivos como rojo, blanco, azul y morado. Su nombre proviene del griego
+                            y significa “hija del viento”.</p>
+                        <p> Simboliza anticipación, fragilidad y protección contra el mal. Muy utilizada en
+                            arreglos modernos</p>
+                    </div>
+                </div>
+                <button class="details-btn">Detalles</button>
+            </div>
+            <!-- Carta 16 -->
+            <div class="card">
+                <div class="card-front">
+                    <img src="img/gardenia.png" alt="Gardenia" class="card-img">
+                </div>
+                <div class="card-back">
+                    <h3 class="card-title">Gardenias</h3>
+                    <div class="card-description">
+                        <p>Blanca y fragante, la gardenia es símbolo de dulzura, amor secreto y paz espiritual.</p>
+                        <p>Su perfume es muy intenso.
+                            Es una flor ornamental elegante, ideal para jardines y ramos finos.</p>
+                    </div>
+                </div>
+                <button class="details-btn">Detalles</button>
+            </div>
+            <!-- Carta 17 -->
+            <div class="card">
+                <div class="card-front">
+                    <img src="img/amapola.png" alt=" Amapola" class="card-img">
+                </div>
+                <div class="card-back">
+                    <h3 class="card-title"> Amapolas</h3>
+                    <div class="card-description">
+                        <p> De pétalos grandes y sedosos, usualmente rojos, aunque también hay variedades naranjas, rosas o blancas.
+                            Simboliza el recuerdo, la paz y también el sueño eterno.</p>
+                        <p> En medicina, algunas especies se usan para producir
+                            compuestos narcóticos (como el opio)</p>
+                    </div>
+                </div>
+                <button class="details-btn">Detalles</button>
+            </div>
+            <!-- Carta 18 -->
+            <div class="card">
+                <div class="card-front">
+                    <img src="img/geranio.png" alt=" Geranio" class="card-img">
+                </div>
+                <div class="card-back">
+                    <h3 class="card-title"> Geranios</h3>
+                    <div class="card-description">
+                        <p> Flor muy común en balcones y jardines, resistente y de larga floración. Viene en rojo, rosa, blanco, morado.</p>
+                        <p>Se
+                            le atribuyen propiedades medicinales y se usa también como repelente natural. Representa la amistad y la
+                            protección</p>
+                    </div>
+                </div>
+                <button class="details-btn">Detalles</button>
+            </div>
+            <!-- Carta 19 -->
+            <div class="card">
+                <div class="card-front">
+                    <img src="img/fresia.png" alt=" Fresia" class="card-img">
+                </div>
+                <div class="card-back">
+                    <h3 class="card-title"> Fresias</h3>
+                    <div class="card-description">
+                        <p> Flor en forma de campana, muy perfumada. Florece en primavera y tiene colores suaves como blanco,amarillo y rosa.</p>
+                        <p> Se asocia con la inocencia, la amistad y la confianza. Su fragancia es usada en productos de belleza.</p>
+                    </div>
+                </div>
+                <button class="details-btn">Detalles</button>
+            </div>
+            <!-- Carta 20 -->
+            <div class="card">
+                <div class="card-front">
+                    <img src="img/camelia.png" alt=" Camelia" class="card-img">
+                </div>
+                <div class="card-back">
+                    <h3 class="card-title"> Camelias</h3>
+                    <div class="card-description">
+                        <p> De pétalos suaves y aspecto aterciopelado, muy popular en Asia.</p>
+                        <p> Es símbolo de elegancia, amor duradero y
+                            devoción. Su estructura es parecida a la rosa, pero sin espinas. Existen variedades en blanco, rojo y rosa.</p>
+                    </div>
+                </div>
+                <button class="details-btn">Detalles</button>
+            </div>
+            <!-- Carta 21 -->
+            <div class="card">
+                <div class="card-front">
+                    <img src="img/aheli.png" alt="Alhelí" class="card-img">
+                </div>
+                <div class="card-back">
+                    <h3 class="card-title">Alhelís</h3>
+                    <div class="card-description">
+                        <p> Flor alta con racimos de pequeñas flores perfumadas. Florece en primavera y tiene colores vivos como amarillo,
+                            púrpura y blanco.</p>
+                        <p> Representa la belleza sencilla y el amor constante. Muy usada en jardines por su resistencia.</p>
+                    </div>
+                </div>
+                <button class="details-btn">Detalles</button>
+            </div>
+            <!-- Carta 22 -->
+            <div class="card">
+                <div class="card-front">
+                    <img src="img/loto.png" alt=" Loto" class="card-img">
+                </div>
+                <div class="card-back">
+                    <h3 class="card-title"> Lotos</h3>
+                    <div class="card-description">
+                        <p> Flor sagrada en muchas culturas asiáticas. Crece en el agua y florece sobre la superficie, símbolo de pureza
+                            espiritual, iluminación y renacimiento.</p>
+                        <p> Sus pétalos son simétricos y puede ser blanca, rosa o azul.</p>
+                    </div>
+                </div>
+                <button class="details-btn">Detalles</button>
+            </div>
+            <!-- Carta 23 -->
+            <div class="card">
+                <div class="card-front">
+                    <img src="img/cerezo.png" alt=" Flor de cerezo" class="card-img">
+                </div>
+                <div class="card-back">
+                    <h3 class="card-title"> Flor de cerezo</h3>
+                    <div class="card-description">
+                        <p> Ícono de la cultura japonesa. Florece en primavera y su belleza efímera simboliza lo pasajero de la vida.</p>
+                        <p>De
+                            pétalos rosados o blancos, suele formar paisajes impresionantes durante la floración. Es celebrada en festivales
+                            como el Hanami</p>
+                    </div>
+                </div>
+                <button class="details-btn">Detalles</button>
+            </div>
+            <!-- Carta 24 -->
+            <div class="card">
+                <div class="card-front">
+                    <img src="img/rosa.png" alt="Rosas" class="card-img">
+                </div>
+                <div class="card-back">
+                    <h3 class="card-title">Rosas</h3>
+                    <div class="card-description">
+                        <p>Una de las flores más reconocidas y apreciadas en todo el mundo. Las rosas tienen una forma elegante, múltiples pétalos y un aroma dulce y característico.</p>
+                        <p>Existen en una gran variedad de colores: rojas, blancas, amarillas, rosadas, entre otras. Se usan en jardinería, perfumes, cosméticos y arreglos florales.</p>
+                    </div>
+                </div>
+                <button class="details-btn">Detalles</button>
+            </div>
+            <!-- Carta 25 -->
+            <div class="card">
+                <div class="card-front">
+                    <img src="img/girasol.png" alt="Girasol" class="card-img">
+                </div>
+                <div class="card-back">
+                    <h3 class="card-title">Girasoles</h3>
+                    <div class="card-description">
+                        <p>Esta flor, cuyo nombre proviene de su tendencia a girar hacia el sol (heliotropismo), es grande, de pétalos amarillos brillantes y centro oscuro.</p>
+                        <p> Representa la felicidad, la energía y la vitalidad. Es símbolo de adoración y longevidad. También se cultiva por sus semillas comestibles y su aceite.</p>
+                    </div>
+                </div>
+                <button class="details-btn">Detalles</button>
+            </div>
+            
+            <!-- CARTAS DUPLICADAS AL FINAL (para efecto infinito) -->
+            <!-- Carta 1 (duplicada al final) -->
+            <div class="card">
+                <div class="card-front">
+                    <img src="img/tulipan.png" alt="tulipan" class="card-img">
+                </div>
+                <div class="card-back">
+                    <h3 class="card-title">Tulipanes</h3>
+                    <div class="card-description">
+                        <p>De forma simple pero elegante, los tulipanes son flores bulbosas de primavera. Suaves y simétricos, vienen en colores como rojo, blanco, púrpura, naranja y amarillo.</p>
+                        <p>Son símbolo de amor perfecto y elegancia. Países como los Países Bajos los cultivan en enormes campos y los exportan a todo el mundo.</p>
+                    </div>
+                </div>
+                <button class="details-btn">Detalles</button>
+            </div>
+            <!-- Carta 2 (duplicada al final) -->
+            <div class="card">
+                <div class="card-front">
+                    <img src="img/lirio.png" alt="Lirio" class="card-img">
+                </div>
+                <div class="card-back">
+                    <h3 class="card-title">Lirios</h3>
+                    <div class="card-description">
+                        <p> Muy llamativo, con pétalos en forma de trompeta. Existen muchas variedades: asiáticos, orientales, trompeta, entre otros.</p>
+                        <p> Muy utilizados en bodas y funerales. Muy llamativo, con pétalos en forma de trompeta. Existen muchas variedades: asiáticos, orientales, trompeta, entre otros.</p>
+                    </div>
+                </div>
+                <button class="details-btn">Detalles</button>
+            </div>
+        </div>
+        
+        <!-- Botón para avanzar -->
+        <button class="btn btn-next">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                <path d="M8.59 16.59L13.17 12 8.59 7.41 10 6l6 6-6 6-1.41-1.41z"/>
+            </svg>
+        </button>
+        
+        <!-- Puntos indicadores (solo para las 25 cartas originales) -->
+        <div class="carousel-dots">
+            <!-- Generamos 25 puntos indicadores -->
+            <script>
+                document.write(Array(25).fill().map((_, i) => 
+                    `<div class="dot ${i === 0 ? 'active' : ''}" data-index="${i}"></div>`
+                ).join(''));
+            </script>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
